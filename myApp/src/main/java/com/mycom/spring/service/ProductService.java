@@ -20,7 +20,7 @@ public class ProductService implements IProductService {
 	
 	@Override
 	public ProductDTO saveProduct(ProductDTO dto) {
-		Category category=productDAO.getCategoty(dto.getCategoryId());
+		Category category=productDAO.getCategoty(dto.getCategory());
 		Product product=new Product(dto.getName(), dto.getImage(), dto.getPrice(), dto.getTax(),dto.getDesc(),category);
 		productDAO.saveProduct(product);
 		return dto;

@@ -7,7 +7,7 @@ public class ProductDTO {
 	private String name;
 	private float price;
 	private float tax;
-	private int categoryId;
+	private int category;
 	
 	
 	public ProductDTO() {
@@ -24,12 +24,12 @@ public class ProductDTO {
 	}
 
 	
-	public int getCategoryId() {
-		return categoryId;
+	public int getCategory() {
+		return category;
 	}
 
-	public void setCategoryId(int categoryId) {
-		this.categoryId = categoryId;
+	public void setCategory(int category) {
+		this.category = category;
 	}
 
 	public String getImage() {
